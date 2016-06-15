@@ -7,6 +7,8 @@ Created on Tue Jun 14 00:37:05 2016
 import pandas as pd
 import numpy as np
 
+
+
 def cleandata(data0):
     for x in range(0, len(data0.columns)-1):
         if len(data0[data0.columns[x]].round(0).value_counts()) == len(data0[data0.columns[x]]):
