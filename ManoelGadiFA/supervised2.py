@@ -36,7 +36,7 @@ def binning1(x):
 			
 			#print(newdata.head())
 
-			bindf = pd.DataFrame(index=range(round(float(newdata.shape[0])/(b+1))), columns=range(b)) #is rounding correct?
+			bindf = pd.DataFrame(index=list(range(round(float(newdata.shape[0])/(b+1)))), columns=list(range(b))) #is rounding correct?
 			bindf = bindf.fillna(0)
 			#print(bindf.head())
 			

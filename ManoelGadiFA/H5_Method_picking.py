@@ -18,11 +18,11 @@ def mp(x, y, testSize=0.25, randomState=0, peceptronIteration = 20, perceptronLe
     rf.fit(X_train, y_train)
     rfScore = rf.score(X_test, y_test)
 
-    print("The Accuracy on Test Set",
-          "\n----------------------------")
-    print("Perceptron    : %0.10f" %perceptronScore)
-    print("SVM           : %0.10f" %svmScore)
-    print("Random Forest : %0.10f" %rfScore)
+    print(("The Accuracy on Test Set",
+          "\n----------------------------"))
+    print(("Perceptron    : %0.10f" %perceptronScore))
+    print(("SVM           : %0.10f" %svmScore))
+    print(("Random Forest : %0.10f" %rfScore))
 
 
 
